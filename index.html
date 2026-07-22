@@ -1,13 +1,43 @@
-<!DOCTYPE html> <! -- Ponha seu comentário aqui -->
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeirt</title>
+    <meta name="description" content="Um guia completo sobre HTML e suas tags.">
+    <meta name="keywords" content="HTML, tags, programação, web design">
+    <meta name="author" content="Sr. Fabio">
+
+    <link rel="icon" href="./whale.png" type="image/png">
+
+    <!-- Fonte Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!-- Fonte Griffy -->
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        const paragrafo = document.querySelector("paragrafo");
+        const botao = document.querySelector("#botao");
+        botao.addEventListener("click", () => {
+            paragrafo.innerHTML = "O gato comeu.";
+        });
+
+        
+    </script>
+
+    <title>Meu primeiro HTML</title>
+
+    <main>
+        /
+    </main>
 </head>
 <body>
-    <h1>Bem-vindo ao site!</h1>
-    <p>Este é um exemplo de uma pagina definida com português do Brasil.</p>
+    <h1 style="font-family: Roboto;">Bem-vindo ao site!</h1>
+    <p>Este é um exemplo de uma página definida com português do Brasil.</p>
     <p>Cadê o hexa?</p>
+    <button id="botao">Clique aqui</button>
 </body>
 </html>
