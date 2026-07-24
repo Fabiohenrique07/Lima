@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,26 +19,137 @@
     <!-- Arquivo CSS -->
     <link rel="stylesheet" href="./style.css">
 
-    <script>
-        const paragrafo = document.querySelector("paragrafo");
-        const botao = document.querySelector("#botao");
-        botao.addEventListener("click", () => {
-            paragrafo.innerHTML = "O gato comeu.";
-        });
-
-        
-    </script>
-
     <title>Meu primeiro HTML</title>
-
-    <main>
-        /
-    </main>
 </head>
 <body>
-    <h1 style="font-family: Roboto;">Bem-vindo ao site!</h1>
-    <p>Este é um exemplo de uma página definida com português do Brasil.</p>
-    <p>Cadê o hexa?</p>
-    <button id="botao">Clique aqui</button>
+
+    <header>
+        <h1 style="font-family: Griffy, sans-serif">Bem vindo ao site!</h1>
+        <h2>titulo secundario</h2>
+    </header>
+
+    <main>
+        <h1 style="font-family: Roboto;">Bem-vindo ao site!</h1>
+
+        <p>Este é um exemplo de uma página definida com português do Brasil.</p>
+
+        <p id="paragrafo">Cadê o hexa?</p>
+
+        <button id="botao">Clique aqui</button>
+    <hr>
+    <p>
+        De tudo, ao meu amor serei atento <br>
+        Antes, e com tal zelo, e sempre, e tanto <br>
+        Que mesmo em face do maior encanto <br>
+        Dele se encante mais meu pensamento. <br>
+    </P>
+    <P> 
+        Quero vivê-lo em cada vão momento <br>
+        E em seu louvor hei de espalhar meu canto <br>
+        E rir meu riso e derramar meu pranto <br>
+        Ao seu pesar ou seu contentamento. <br>
+    </P>
+    <P>
+        E assim, quando mais tarde me procure <br>
+        Quem sabe a morte, angústia de quem vive <br>
+        Quem sabe a solidão, fim de quem ama <br>
+    </P>
+    <P>
+        Eu possa dizer do meu amor (que tive): <br>
+        Que não seja imortal, posto que é chama <br>
+        Mas que seja infinito enquanto dure. <br>
+    </p>
+
+    <p>Este e meu abre chevron &lt; </p>
+    <p>Este e um fecha chevron &gt; </p>
+
+    <h2>Minha lista de compras</h2>
+    <Ul type="square"><!--lista não ordenada, usada para itens sem ordem específica-->
+        <!--cada item da lista e definido pela tag <li> -->
+            <li>Maça</li>
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>ovos</li>
+
+    </Ul>
+
+    <ul type="disc">
+        <li>item com marcador padrão (disc)</li>
+        
+    <ul type="circle">
+        <li>Item com marcador de círculo vazio (circle)</li>
+    </ul>
+
+    <ul type="square">
+        <li>Item com marcador de quadrado cheio</li>
+    </ul>
+
+    <h2>Passos para ligar o computador</h2>
+    <ol><!-- Lista ordenada com os passos simples para ligar um computador -->
+        <!-- Cada item e definido pela tag <li> -->
+        <li>verificar se o cabo de alimentação está conectado na tomada.</li>
+        <li>Certificar-se de que o cabo de alimentção esrtá conectado na tomada.</li>
+        <li>Pressionar o botão de ligar</li>
+        <li>aguardar até que a tela de inicialização apareça</li>
+
+    </ol>
+
+    <ol start="5" reversed>
+        <li style="color: rgb(200, 0, 255);">Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ol>
+
+    <p>
+        <a href="https://pixabay.com/pt/photos/p%C3%A1ssaro-fio-c%C3%A9u-natureza-nublado-10241593/"
+            src="Ferrugem_2022.jpg"
+            href= "https://github.com/Fabiohenrique07"
+            target="_black"
+            title="Visite meu github"
+            rel="nofollow noopener"
+        >
+            Veja meu GitHub
+        </a>
+    </p>
+
+    <p>
+        <a 
+            href="https://www.youtube.com/watch?v=JhXagtxvDKY"
+            target="_blank"
+            title="Escute Ferrugem no Youtube"
+        >
+            Escute Ferrugem 
+        </a>
+    </p>
+
+    <table border="2" cellspacing="1" cellpadding="10" width="80%" align="center"> <!--Elemento tabela -->
+        <tr> <!-- Elemento linha de tabela (table row) --> 
+            <th>nome</th> <!-- nome das colunas -->
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <th>Fabio</th>
+            <th>16</th>
+            <th>São Paulo</th>
+        </tr>
+    </table>
+
+    </main>
+
+    <footer>
+        &copy; 2026 - Todos os direitos reservados
+    </footer>
+
+    <script>
+        const paragrafo = document.querySelector("#paragrafo");
+        const botao = document.querySelector("#botao");
+
+        botao.addEventListener("click", () => {
+            paragrafo.innerHTML = "O rato roeu a roupa do rei de Roma.";
+        });
+    </script>
+
 </body>
+
 </html>
