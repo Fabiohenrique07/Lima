@@ -1,0 +1,29 @@
+* {
+    margin: 0; /* remove as margens padrão de todos os elementos */
+    padding: 0; /* remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* isso garante que o padding e a borda sejam incluídos no cálculo dos elementos */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex; /* utiliza o modelo de leiaute Flexbox para o corpo do documento */
+    justify-content: center; /* centraliza os elementos horizontalmente */
+    align-items: center; /* centraliza os elementos verticalmente */
+    height: 100vh;
+}
+
+.card-container {
+    display: flex; /* utiliza o modelo de leiaute Flexbox */
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border
+}
