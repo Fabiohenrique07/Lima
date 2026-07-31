@@ -1,0 +1,8 @@
+body {
+    background-image: URL('./Dragon-Ball-PNG-Picture.png');
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-position: center;
+   /* background-size: cover; */
+    background-attachment: fixed;
+}
