@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop do João</title>
+ 
+    <link rel="stylesheet" href="petshopstyle.css">
+ 
+    <style>
+        :root {
+            --primary-color: #73AD21;
+            --secondary-color: #4A90E2;
+            --background-color: #F4F4F9;
+            --text-color: #333333;
+        }
+ 
+        [data-theme="dark"] {
+            --primary-color: #48A74D;
+            --secondary-color: #A3FF61;
+            --background-color: #222222;
+            --text-color: #FFFFFF;
+        }
+ 
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+ 
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+ 
+        a:hover {
+            color: var(--secondary-color);
+        }
+ 
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+ 
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+ 
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Pet Shop do João</h1>
+ 
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+ 
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    &#9776;
+                </button>
+            </nav>
+ 
+            <button id="theme-toggle" class="btn">
+                Alternar Tema
+            </button>
+        </div>
+    </header>
+ 
+    <main class="main-content container">
+        <aside id="about" class="sidebar">
+            <h2>Sobre o Pet Shop</h2>
+ 
+            <p>
+                O Pet Shop do João oferece serviços de alta qualidade
+                para cuidar do seu melhor amigo.
+            </p>
+ 
+            <img src="" alt="Banho e Tosa">
+ 
+            <ul class="sidebar-link">
+                <li><a href="#">Clínica Veterinária</a></li>
+                <li><a href="#">Banho e Tosa</a></li>
+                <li><a href="#">Pet Hotel</a></li>
+                <li><a href="#">Produtos para Pets</a></li>
+            </ul>
+        </aside>
+    </main>
+ 
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+ 
+        <div class="card">
+            <img src="" alt="Clínica Veterinária">
+            <h3>Clínica Veterinária</h3>
+            <p>Conforto e segurança enquanto você está fora.</p>
+            <button class="btn">Saiba mais</button>
+        </div>
+ 
+        <div class="card">
+            <img src="" alt="Banho e Tosa">
+            <h3>Banho e Tosa</h3>
+            <p>Deixe seu pet ainda mais bonito e cheiroso!</p>
+            <button class="btn">Saiba mais</button>
+        </div>
+ 
+        <div class="card">
+            <img src="" alt="Pet Hotel">
+            <h3>Pet Hotel</h3>
+            <p>Conforto e segurança para seu pet enquanto você está fora.</p>
+            <button class="btn">Saiba mais</button>
+        </div>
+    </section>
+ 
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+ 
+        <div class="contact-info">
+            <p><strong>Endereço:</strong> Rua das Flores, 123 - Centro, São Paulo - SP</p>
+            <p><strong>Telefone:</strong> (11) 98765-4321</p>
+            <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+            <p><strong>E-mail:</strong> contato@petshopdojoao.com.br</p>
+            <p><strong>Horário de funcionamento:</strong></p>
+            <ul>
+                <li>Segunda a Sexta: 08:00 às 19:00</li>
+                <li>Sábado: 08:00 às 14:00</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+    </section>
+ 
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+ 
+        // Verifica se já tem tema salvo
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.setAttribute('data-theme', savedTheme);
+        }
+ 
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+ 
+            if (currentTheme === 'dark') {
+                html.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>
