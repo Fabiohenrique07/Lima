@@ -1,0 +1,25 @@
+.servicos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.servico{
+    width: 300px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+
+}
+.servico img{
+    width: 100%;
+    border-radius: 5px;
+}
+.servico h3{
+    margin: 10px 0;
+    color: #333;
+}
+.servico p{
+    font-size: 14px;
+    color: #666;
+}
