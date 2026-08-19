@@ -47,6 +47,9 @@ header nav ul li a{
 .logo{
     display: flex;
 }
+.logo img{
+    width: 20%;
+}
 .nome{
     width: 70%;
     margin-left: 2px;
@@ -221,18 +224,19 @@ img{
     .menu-toggle{
         display: block;
     }
-}
-/*esconde o menu por padrão e exibe quando ativo*/
-.menu{
-    display: none;
-    flex-direction: column;
-    background: #005a8d;
-    width: 100%;
-    text-align: center;
-}
-.menu.show{
-    display: flex;
-}
-.menu li{
-    padding: 10px;
+
+    /*esconde o menu por padrão e exibe quando ativo*/
+    .menu{
+        display: none;
+        flex-direction: column;
+        background: #005a8d;
+        width: 100%;
+        text-align: center;
+    }
+    .menu.show{
+        display: flex;
+    }
+    .menu li{
+        padding: 10px;
+    }
 }
