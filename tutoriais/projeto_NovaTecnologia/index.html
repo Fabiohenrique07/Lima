@@ -1,84 +1,234 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Nova Tecnologia Informatica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Nova Tecnologia Informática</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/style.css">
+
     <script defer src="js/menu.js"></script>
     <script defer src="js/carousel.js"></script>
 </head>
+
 <body>
-    <!--cabeçalho-->
+
+    <!-- Cabeçalho -->
     <header>
         <nav aria-label="Menu de navegação principal">
+
             <div class="logo">
-                <img src="consultoria.jpg" alt="logo da empresa nova Tecnologia Informatica">
+                <img src="imagens/FTI.jpg"
+                    alt="Logo da empresa Nova Tecnologia Informática"
+                >
             </div>
-        <div class="nome">
-            <h1>nova Tecnologia Informatica</h1>
+
+            <div class="nome">
+                <h1>Nova Tecnologia Informática</h1>
             </div>
-            <button id="menu-toggle" class="menu-toggle" aria-label="abrir menu">&#8801</button>
-            <ul id="menu" class="menu" role="navigation" aria-labelledby="menu-toggle">
-                <li><a href="index.html" tabindex="0">Início</a></li>
-                <li><a href="sobre.html" tabindex="0">Sobre</a></li>
-                <li><a href="serviocos.html" tabindex="0">Serviços</a></li>
-                <li><a href="contato.html" tabindex="0">Contato</a></li>
+
+            <button
+                id="menu-toggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                &#8801;
+            </button>
+
+            <ul id="menu" class="menu">
+                <li>
+                    <a href="index.html" aria-current="page">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicos.html">
+                        Serviços
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
             </ul>
+
         </nav>
     </header>
-    <!--Carrosel-->
-    <section class="carousel" aria-labelledby="carousel-heading">
-        <div class="carousel-container">
-            <article class="carousel-item">
-                <img src="consultoria.jpg" alt="Consultoria em TI">
-            </article>
-            <article class="carousel-item">
-                <img src="desenvolvimento.jpg" alt="Desenvolvimento de Sistemas">
-            </article>
-            <article class="carousel-item">
-                <img src="infraestrutura.jpg" alt="Infraestrutura de TI">
-            </article>
-            <article class="carousel-item">
-                <img src="suporte_tecnico.jpg" alt="Suporte Técnico">
-            </article>
-        </div>
-        <button class="carousel-btn prev" aria-label="Imagem Anterior">&lt;</button>
-        <button class="carousel-btn next" aria-label="Próxima Imagem">&gt;</button>
 
-    </section>
-    <!--Serviços-->
-    <section class="services">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="service-list">
-                <article class="service-item">
-                    <h3>Desenvolvimento de Software</h3>
-                    <p>Soluções personalizadas para atender a suas necessidades.</p>
+
+    <!-- Carrossel -->
+    <main>
+
+        <section
+            class="carousel"
+            aria-labelledby="carousel-heading"
+        >
+
+            <h2 id="carousel-heading" class="sr-only">
+                Nossos serviços
+            </h2>
+
+            <div class="carousel-container">
+
+                <article class="carousel-item">
+                    <img src="imagens/consultoriaSITE.jpg"
+                        alt="Consultoria em Tecnologia da Informação"
+                    >
                 </article>
-                <article class="service-item">
-                    <h3>Consultoria em TI</h3>
-                    <p>Planejamento estratégico para o sucesso tecnológico.</p>
+
+                <article class="carousel-item">
+                    <img src="imagens/desenvolvimentoSITE.jpg"
+                        alt="Desenvolvimento de sistemas"
+                    >
                 </article>
-                <article class="service-item">
-                    <h3>Suporte Técnico</h3>
-                    <p>Assistência continua para manter sua empresa operando.</p>
+
+                <article class="carousel-item">
+                    <img src="imagens/infraestruturaSITE.jpg"
+                        alt="Infraestrutura de Tecnologia da Informação"
+                    >
                 </article>
-                <article class="service-item">
-                    <h3>Infraestrutura de TI</h3>
-                    <p>Projeto e Implementação de Infraestrutura de TI.</p>
+
+                <article class="carousel-item">
+                    <img src="imagens/suporte_tecnicoSITE.jpg"
+                     alt="Suporte Técnico"
+                    >
                 </article>
+
             </div>
-        </div>
-    </section>
-    <!--Rodapé-->
+
+            <button
+                class="carousel-btn prev"
+                type="button"
+                aria-label="Imagem anterior"
+            >
+                &lt;
+            </button>
+
+            <button
+                class="carousel-btn next"
+                type="button"
+                aria-label="Próxima imagem"
+            >
+                &gt;
+            </button>
+
+        </section>
+
+
+        <!-- Serviços -->
+        <section class="services">
+
+            <div class="container">
+
+                <h2>Nossos Serviços</h2>
+
+                <div class="service-list">
+
+                    <article class="service-item">
+                        <h3>Desenvolvimento de Software</h3>
+
+                        <p>
+                            Soluções personalizadas para atender
+                            às suas necessidades.
+                        </p>
+                    </article>
+
+
+                    <article class="service-item">
+                        <h3>Consultoria em TI</h3>
+
+                        <p>
+                            Planejamento estratégico para o sucesso
+                            tecnológico.
+                        </p>
+                    </article>
+
+
+                    <article class="service-item">
+                        <h3>Suporte Técnico</h3>
+
+                        <p>
+                            Assistência contínua para manter sua
+                            empresa operando.
+                        </p>
+                    </article>
+
+
+                    <article class="service-item">
+                        <h3>Infraestrutura de TI</h3>
+
+                        <p>
+                            Projeto e implementação de infraestrutura
+                            de TI.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; Nova Tecnologia Informatica | Todos os direitos reservados.</p>
-        <p><strong>Endereço:</strong> Rua Alan Turing, 123, Bairro Eniac, Cidade das Máquinas</p>
-        <p><strong>Telefone:</strong> <a href="tel:+55999999999">(99)99999-9999</a></p>
-        <p><strong>Email:</strong> <a href="mailto:contato@novatecinfo.com">contato@novatecinfo.com</a></p>
-        <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta: 8h - 18h | Sábado: 9h - 14h</p>
+
+        <p>
+            &copy; Nova Tecnologia Informática |
+            Todos os direitos reservados.
+        </p>
+
+        <p>
+            <strong>Endereço:</strong>
+            Avenida Francisco Matarazzo, 1705 e na Rua Palestra Itália, 200 (antiga Rua Turiassu), no bairro da Água Branca / Perdizes, em São Paulo - SP.
+        </p>
+
+        <p>
+            <strong>Telefone:</strong>
+            <a href="tel:+55999999999">
+                (99) 99999-9999
+            </a>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="palmeiras@gmail.com">
+                contato@novatecinfo.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Horário de Funcionamento:</strong>
+            Segunda a Sexta: 8h - 18h |
+            Sábado: 9h - 14h
+        </p>
+
     </footer>
+
 </body>
 </html>

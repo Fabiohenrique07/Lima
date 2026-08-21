@@ -1,85 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <title>Sobre - Nova Tecnologia Informática</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/menu.js"></script>
 </head>
+
 <body>
-    <!--Cabeçalho-->
+
+    <!-- Cabeçalho -->
     <header role="banner">
         <nav aria-label="Menu de navegação principal">
+
             <div class="logo">
-                <img src="images/logo.png" alt="logo da empresa nova Tecnologia Informatica">
+                <img
+                    src="imagens/FTI.jpg"
+                    alt="Logo da empresa Nova Tecnologia Informática"
+                >
             </div>
-        <div class="nome">
-            <h1>nova Tecnologia Informatica</h1>
+
+            <div class="nome">
+                <h1>Nova Tecnologia Informática</h1>
             </div>
-            <button id="menu-toggle" class="menu-toggle" aria-label="abrir menu">&#8801</button>
-            <ul id="menu" class="menu" role="navigation" aria-labelledby="menu-toggle">
-                <li><a href="index.html" tabindex="0">Início</a></li>
-                <li><a href="sobre.html" tabindex="0">Sobre</a></li>
-                <li><a href="serviocos.html" tabindex="0">Serviços</a></li>
-                <li><a href="contato.html" tabindex="0">Contato</a></li>
+
+            <button
+                id="menu-toggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-controls="menu"
+                aria-expanded="false"
+            >
+                &#9776;
+            </button>
+
+            <ul id="menu" class="menu">
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html" aria-current="page">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="servicos.html">Serviços</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
             </ul>
+
         </nav>
     </header>
-      <!--Sobre a empresa-->
-        <main role="main">
-            <section class="sobre" aria-labelledby="sobre-head">
-                <div class="container">
-                    <section class="content">
-                        <div class="content-list">
-                            <div class="content-item">
-                                <h2 id="sobre-head">Quem Somos</h2>
-                                <p>
-                                    A Nova Tecnologia Informatica é uma empresa inovadora focada em
-                                    Soluções tecnológicas personalizadas. com uma equipe especializada,
-                                    oferecemos serviços como Desenvolvimento de software, consultoria e 
-                                    Infraestrutura de TI.
-                                </p>
-                            </div>
-                            <div class="content-item">
-                                <h2 id="sobre-head">Nossa Missâo</h2>
-                                <p>
-                                    Fornecer Soluções tecnológicas eficientes e inovadoras para empresas de
-                                    todos os portes, garantindo excelência e confiabilidade.
-                                </p>
-                            </div>
-                            <div class="content-item">
-                                <h2 id="sobre-head">Visão</h2>
-                                <p>
-                                   Ser referência no mercado de tecnologia, destacando-se pela inovação e
-                                   atendimento personalizado.
-                                </p>
-                            </div>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <section class="sobre" aria-labelledby="titulo-sobre">
+
+            <div class="container">
+
+                <section class="content">
+
+                    <div class="content-list">
+
+                        <!-- Quem Somos -->
                         <div class="content-item">
-                            <h2 id="sobre-head">Valores</h2>
+                            <h2 id="titulo-sobre">Quem Somos</h2>
+
+                            <p>
+                                A Nova Tecnologia Informática é uma empresa inovadora,
+                                focada em soluções tecnológicas personalizadas.
+                                Com uma equipe especializada, oferecemos serviços como
+                                desenvolvimento de software, consultoria e
+                                infraestrutura de TI.
+                            </p>
+                        </div>
+
+                        <!-- Nossa Missão -->
+                        <div class="content-item">
+                            <h2 id="titulo-missao">Nossa Missão</h2>
+
+                            <p>
+                                Fornecer soluções tecnológicas eficientes e inovadoras
+                                para empresas de todos os portes, garantindo excelência
+                                e confiabilidade.
+                            </p>
+                        </div>
+
+                        <!-- Nossa Visão -->
+                        <div class="content-item">
+                            <h2 id="titulo-visao">Nossa Visão</h2>
+
+                            <p>
+                                Ser referência no mercado de tecnologia, destacando-se
+                                pela inovação e pelo atendimento personalizado.
+                            </p>
+                        </div>
+
+                        <!-- Nossos Valores -->
+                        <div class="content-item">
+                            <h2 id="titulo-valores">Nossos Valores</h2>
+
                             <ul>
                                 <li>Compromisso com a qualidade.</li>
                                 <li>Ética e transparência.</li>
-                                <li>Inovaçâo Constante.</li>
+                                <li>Inovação constante.</li>
                                 <li>Foco no cliente.</li>
                             </ul>
                         </div>
+
+                        <!-- Imagem -->
                         <div class="content-item">
-                            <img src="imagens/visao.jpg" alt="Imagem representando a visão da
-                            empresa">
+                            <img
+                                src="imagens/FTI.jpg"
+                                alt="Imagem representando a visão da empresa"
+                            >
                         </div>
-                    </section>
-                </div>
-            </section>
-        </main>
-    <!--Rodape-->
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; Nova Tecnologia Informatica | Todos os direitos reservados.</p>
-        <p><strong>Endereço:</strong> Rua Alan Turing, 123, Bairro Eniac, Cidade das Máquinas</p>
-        <p><strong>Telefone:</strong> <a href="tel:+55999999999">(99)99999-9999</a></p>
-        <p><strong>Email:</strong> <a href="mailto:contato@novatecinfo.com">contato@novatecinfo.com</a></p>
-        <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta: 8h - 18h | Sábado: 9h - 14h</p>
+
+        <p>
+            &copy; Nova Tecnologia Informática |
+            Todos os direitos reservados.
+        </p>
+
+        <p>
+            <strong>Endereço:</strong>
+            Avenida Francisco Matarazzo, 1705 e na Rua Palestra Itália, 200 (antiga Rua Turiassu), no bairro da Água Branca / Perdizes, em São Paulo - SP.
+        </p>
+
+        <p>
+            <strong>Telefone:</strong>
+            <a href="tel:+55999999999">(99) 99999-9999</a>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="palmeiras@gmail.com">
+                contato@novatecinfo.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Horário de Funcionamento:</strong>
+            Segunda a Sexta: 8h - 18h |
+            Sábado: 9h - 14h
+        </p>
+
     </footer>
+
 </body>
 </html>
